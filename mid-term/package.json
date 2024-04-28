@@ -10,7 +10,8 @@
     "compile": "npx hardhat compile",
     "build": "yarn clean && yarn compile",
     "coverage": "npx hardhat coverage",
-    "test": "REPORT_GAS=true npx hardhat test"
+    "test": "REPORT_GAS=true npx hardhat test",
+    "deploy": "npx hardhat run deploy/deploy.js --network sepolia"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
